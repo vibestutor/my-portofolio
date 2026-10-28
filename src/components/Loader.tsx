@@ -52,12 +52,46 @@ export default function Loader({ onComplete }: LoaderProps) {
   }, [onComplete])
 
   return (
-    <div id="loader" ref={rootRef} style={{ clipPath: 'inset(0 0 0% 0)' }}>
-      <div className="loader-wordmark" ref={wordRef}>Muhamad Rahman</div>
-      <div className="loader-bar-track">
+    <div 
+      id="loader" 
+      ref={rootRef} 
+      style={{ 
+        clipPath: 'inset(0 0 0% 0)',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'fixed',
+        inset: 0,
+        width: '100vw',
+        height: '100svh', // Menggunakan svh agar pas di layar HP (aman dari nabrak address bar browser)
+        zIndex: 10000,
+        background: 'var(--bg)',
+        overflow: 'hidden',
+        padding: '0 24px', // Mencegah konten mentok ke tepi layar HP
+        boxSizing: 'border-box'
+      }}
+    >
+      <div 
+        className="loader-wordmark" 
+        ref={wordRef}
+        style={{ textAlign: 'center', width: '100%' }}
+      >
+        Muhamad Rahman
+      </div>
+
+      <div 
+        className="loader-bar-track"
+        style={{ margin: '24px 0' }} // Memberikan jarak aman atas-bawah
+      >
         <div className="loader-bar-fill" ref={fillRef} />
       </div>
-      <div className="loader-count" ref={numRef}>
+
+      <div 
+        className="loader-count" 
+        ref={numRef}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+      >
         <span ref={countRef}>000</span>
         <span style={{ marginLeft: 4, color: 'var(--muted)', fontSize: 10 }}>%</span>
       </div>

@@ -1119,3 +1119,172 @@ ul, ol { list-style: none; }
   .footer-inner { flex-direction: column; text-align: center; }
   .section-header-inner { flex-direction: column; align-items: flex-start; }
 }
+
+/* ─── RESPONSIVE (IMPROVED FOR MOBILE) ───────────────────────────── */
+
+/* 1. Sembunyikan Custom Cursor di Layar Sentuh / HP */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+  #cursor, #cursor-ring {
+    display: none !important;
+  }
+}
+
+/* 2. Tablet (<= 1024px) */
+@media (max-width: 1024px) {
+  .about-grid { 
+    grid-template-columns: 1fr; 
+    gap: 40px;
+  }
+  .about-image-wrap { 
+    aspect-ratio: 16/9; 
+    max-width: 100%; 
+  }
+  .ai-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .project-featured { 
+    grid-template-columns: 1fr; 
+  }
+  .journal-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* 3. Mobile (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 50px; /* Kurangi padding section agar tidak terlalu renggang */
+  }
+
+  /* Container & Layout */
+  .container {
+    padding: 0 20px; /* Padding samping lebih pas di layar HP */
+  }
+
+  /* Navbar */
+  #navbar {
+    padding: 16px 20px;
+  }
+  #navbar.scrolled {
+    padding: 12px 20px;
+  }
+  .nav-links { 
+    display: none; /* Kamu bisa tambahkan hamburger menu nanti */
+  }
+  .nav-cta {
+    padding: 7px 16px;
+    font-size: 11px;
+  }
+
+  /* Hero Section */
+  #hero {
+    padding: 110px 0 60px 0;
+    min-height: auto; /* Mencegah bentrok height di browser HP */
+  }
+  .hero-content {
+    padding-top: 20px;
+  }
+  .hero-available {
+    margin-bottom: 24px;
+  }
+  .hero-sub {
+    margin-bottom: 32px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .btn-primary, .btn-ghost {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-scroll-hint {
+    display: none; /* Sembunyikan petunjuk scroll di HP agar tidak menutupi tombol */
+  }
+
+  /* Section Header */
+  .section-header {
+    margin-bottom: 40px;
+  }
+  .section-header-inner { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 16px;
+  }
+
+  /* About & Stats */
+  .about-stat-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .about-stat {
+    padding: 18px 16px;
+  }
+
+  /* Projects List */
+  .project-item { 
+    grid-template-columns: 1fr auto; /* Sembunyikan nomor project di HP agar judul muat */
+    gap: 12px;
+    padding: 20px 0;
+  }
+  .project-num { 
+    display: none; 
+  }
+  .project-card-overlay {
+    padding: 20px;
+  }
+
+  /* AI & Journal Cards */
+  .ai-grid, 
+  .journal-grid { 
+    grid-template-columns: 1fr; 
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .ai-card {
+    padding: 24px 20px;
+  }
+
+  /* Timeline / Experience */
+  .timeline {
+    padding-left: 20px;
+    margin-top: 32px;
+  }
+  .timeline-item {
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  .timeline-dot {
+    left: -24px;
+  }
+
+  /* Tech Stack Grid */
+  .tech-grid { 
+    grid-template-columns: repeat(2, 1fr); /* Maksimal 2 kolom di HP */
+    gap: 8px;
+    margin-top: 32px;
+  }
+  .tech-item {
+    padding: 16px 14px;
+  }
+
+  /* Contact & Footer */
+  .contact-email {
+    font-size: clamp(22px, 6vw, 36px); /* Kecilkan e-mail agar tidak terpotong */
+    word-break: break-all;
+  }
+  .contact-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-inner { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 16px;
+  }
+  .footer-links {
+    justify-content: center;
+  }
+}

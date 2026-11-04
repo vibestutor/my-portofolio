@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Lenis from 'lenis'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -15,9 +16,12 @@ import TechStack  from './Sections/TechStack'
 import Journal    from './Sections/Journal'
 import Contact    from './Sections/Contact'
 
+import ProjectDetail from './pages/projectwebdetail'
+
 gsap.registerPlugin(ScrollTrigger)
 
-export default function App() {
+// Komponen penampung untuk Home Page
+function Home() {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
@@ -42,7 +46,6 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
       {!loaded && <Loader onComplete={() => setLoaded(true)} />}
       <Navbar />
       <main id="main-content" aria-label="Portfolio content">
@@ -55,6 +58,18 @@ export default function App() {
         <Journal />
         <Contact />
       </main>
+    </>
+  )
+}
+
+export default function App() {
+  return (
+    <>
+      <Cursor />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
+      </Routes>
     </>
   )
 }

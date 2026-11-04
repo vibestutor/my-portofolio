@@ -674,6 +674,8 @@ ul, ol { list-style: none; }
   overflow: hidden;
   background: var(--card);
   cursor: pointer;
+  display: block; 
+  text-decoration: none;
 }
 
 .project-card img {
@@ -692,11 +694,83 @@ ul, ol { list-style: none; }
 .project-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(7,7,7,0.9) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(7,7,7,0.92) 0%, rgba(7,7,7,0.2) 60%, transparent 100%);
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.project-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  border: 1px solid var(--border);
+  transition: transform 0.4s var(--ease-out), background 0.3s, border-color 0.3s;
+}
+
+.project-card:hover .project-card-arrow {
+  transform: rotate(45deg) scale(1.1);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.project-card-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover .project-card-action {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-action-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.project-action-text {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.project-item:hover .project-action-text {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .project-card-category {

@@ -40,8 +40,8 @@ const FEATURED: FeaturedProject[] = [
     title: 'Smart Stock Opname — Otomasi Stok Gudang Tanpa Pusing',
     desc: 'Sistem pengecekan inventaris gudang cerdas berbasis otomatisasi untuk menghilangkan kesalahan hitung manual dan bikin laporan jadi instan.',
     img: '/images/gloomie-stock.webp',
-    detailUrl: '#',
-    actionText: 'Segera Hadir'
+    detailUrl: '/projects/appsheet-stock',
+    actionText: 'Lihat Detail'
   },
 ]
 

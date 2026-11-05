@@ -27,7 +27,7 @@ const SOCIALS = [
   { 
     icon: FileText,     
     label: 'Resume (PDF)', 
-    href: '/cv-muhamad-rahman.pdf', 
+    href: '/cv-ats-muhamad-rahman.pdf', 
     external: true 
   },
 ]

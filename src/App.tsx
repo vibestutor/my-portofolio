@@ -17,6 +17,7 @@ import Journal    from './Sections/Journal'
 import Contact    from './Sections/Contact'
 
 import ProjectDetail from './pages/projectwebdetail'
+import AppsheetDetail from './pages/appsheetdetail'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -69,6 +70,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
+        {/* Halaman Detail AppSheet (Smart Stock Opname) */}
+        <Route path="/projects/appsheet-stock" element={<AppsheetDetail />} />
       </Routes>
     </>
   )

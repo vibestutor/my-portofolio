@@ -17,9 +17,9 @@ export default function AppsheetDetail() {
   useEffect(() => {
     // Setup Smooth Scroll Lenis khusus halaman detail dengan rumus easing yang valid
     const lenis = new Lenis({
-      duration: 1.2,
+      duration: 1.3,
       easing: (t: number) => Math.min(1, 1.001 * Math.pow(2, -10 * t)),
-    })
+     })
 
     lenis.on('scroll', ScrollTrigger.update)
 

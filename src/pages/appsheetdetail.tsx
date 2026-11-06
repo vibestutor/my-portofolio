@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ArrowLeft, Zap, Database, Smartphone, CheckCircle2, FileText, Cpu, DollarSign, PieChart, ShieldCheck } from 'lucide-react'
+import { ArrowLeft, Zap, Database, Smartphone, CheckCircle2, FileText, Cpu, DollarSign, PieChart, ShieldCheck, ExternalLink } from 'lucide-react'
 import Lenis from 'lenis'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -18,7 +18,7 @@ export default function AppsheetDetail() {
     // Setup Smooth Scroll Lenis khusus halaman detail
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      easing: (t: number) => Math.min(1, 1.001 * Math.pow(2, -10 * t)),
     })
 
     lenis.on('scroll', ScrollTrigger.update)
@@ -105,9 +105,20 @@ export default function AppsheetDetail() {
               <span style={{ fontSize: '13px', color: 'var(--muted)', display: 'block' }}>Platform & Status</span>
               <strong style={{ color: 'var(--text)' }}>Google AppSheet & Cloud Database — Enterprise Ready</strong>
             </div>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: 'rgba(255,255,255,0.05)', color: 'var(--muted)', borderRadius: '8px', fontWeight: 500, border: '1px solid var(--border)' }}>
-              Dalam Tahap Pengembangan
-            </span>
+            
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 16px', background: 'rgba(255,255,255,0.05)', color: 'var(--muted)', borderRadius: '8px', fontSize: '14px', fontWeight: 500, border: '1px solid var(--border)' }}>
+                Siap Digunakan
+              </span>
+              <a 
+                href="https://www.appsheet.com/start/c817474f-f604-41d3-9328-ad4cd2532ab6?platform=desktop#appName=MRinventorymanagementDEMO-63102697&vss=H4sIAAAAAAAAA52OvQ4CIRCE32VqnoDWmGiMNhobscBjSYh3cDk49UJ4dxd_Yqt2u7PzzU7GxdF1m3Rzhjzkz7aiCRJZYTf1pCAVZsGnIbQKQmGju6e4CHUoKEfxZhNFyPw9Kv__KuAM-eSso6HmVIr5F8PnSrBQ_SgC3Zj0qaVHSfaXwpoNzRjJ7LnCj6_j0s9vvfZmHQzHWd1GKndbTHqGUQEAAA==&view=Home" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', background: 'var(--accent)', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '14px' }}
+              >
+                Cek Demo Live <ExternalLink size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -134,7 +145,7 @@ export default function AppsheetDetail() {
           </div>
         </section>
 
-        {/* SECTION 2: CORE FEATURES (INVENTORY + CASHFLOW + SECURITY) */}
+        {/* SECTION 2: CORE FEATURES */}
         <section className="anim-reveal" style={{ marginBottom: '4rem' }}>
           <h2 style={{ fontSize: '1.75rem', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Smartphone style={{ color: 'var(--accent)' }} size={24} /> 2. Fitur Utama & Multi-Role Security
@@ -214,9 +225,19 @@ export default function AppsheetDetail() {
           <p style={{ color: 'var(--muted)', marginBottom: '1.5rem', maxWidth: '600px', margin: '0 auto 1.5rem' }}>
             mari diskusikan pembuatan aplikasi custom berbasis low-code atau web app sesuai kebutuhan bisnis Anda.
           </p>
-          <Link to="/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'var(--accent)', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
-            kembali ke beranda
-          </Link>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+            <a 
+              href="https://www.appsheet.com/start/c817474f-f604-41d3-9328-ad4cd2532ab6?platform=desktop#appName=MRinventorymanagementDEMO-63102697&vss=H4sIAAAAAAAAA52OvQ4CIRCE32VqnoDWmGiMNhobscBjSYh3cDk49UJ4dxd_Yqt2u7PzzU7GxdF1m3Rzhjzkz7aiCRJZYTf1pCAVZsGnIbQKQmGju6e4CHUoKEfxZhNFyPw9Kv__KuAM-eSso6HmVIr5F8PnSrBQ_SgC3Zj0qaVHSfaXwpoNzRjJ7LnCj6_j0s9vvfZmHQzHWd1GKndbTHqGUQEAAA==&view=Home" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 24px', background: 'var(--accent)', color: '#fff', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}
+            >
+              Coba Demo AppSheet <ExternalLink size={16} />
+            </a>
+            <Link to="/" className="btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'rgba(255,255,255,0.05)', color: 'var(--text)', border: '1px solid var(--border)', borderRadius: '8px', textDecoration: 'none', fontWeight: 600 }}>
+              kembali ke beranda
+            </Link>
+          </div>
         </div>
 
       </div>

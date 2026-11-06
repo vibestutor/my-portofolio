@@ -5,6 +5,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import Cursor     from './components/Cursor'
+import ScrollToTop from './components/ScrollToTop'
 import Loader     from './components/Loader'
 import Navbar     from './components/Navbar'
 import Hero       from './Sections/Hero'
@@ -21,7 +22,6 @@ import AppsheetDetail from './pages/appsheetdetail'
 
 gsap.registerPlugin(ScrollTrigger)
 
-// Komponen penampung untuk Home Page
 function Home() {
   const [loaded, setLoaded] = useState(false)
 
@@ -67,10 +67,11 @@ export default function App() {
   return (
     <>
       <Cursor />
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
-        {/* Halaman Detail AppSheet (Smart Stock Opname) */}
         <Route path="/projects/appsheet-stock" element={<AppsheetDetail />} />
       </Routes>
     </>

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { ArrowLeft, Zap, Database, Smartphone, CheckCircle2, FileText, Cpu, DollarSign, PieChart, ShieldCheck, ExternalLink } from 'lucide-react'
 import Lenis from 'lenis'
@@ -14,20 +14,18 @@ export default function AppsheetDetail() {
   const { id } = useParams()
   const pageRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    // Setup Smooth Scroll Lenis khusus halaman detail dengan rumus easing yang valid
+  useLayoutEffect(() => {
     const lenis = new Lenis({
       duration: 1.3,
-      easing: (t: number) => Math.min(1, 1.001 * Math.pow(2, -10 * t)),
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
      })
 
     lenis.on('scroll', ScrollTrigger.update)
 
-    const rafCallback = (time: number) => { lenis.raf(time * 1000) }
+    const rafCallback = (time: number) => lenis.raf(time * 1000)
     gsap.ticker.add(rafCallback)
     gsap.ticker.lagSmoothing(0)
 
-    // Setup GSAP Scroll Animations
     const ctx = gsap.context(() => {
       gsap.utils.toArray<HTMLElement>('.anim-reveal').forEach((el) => {
         gsap.fromTo(el,
@@ -40,7 +38,8 @@ export default function AppsheetDetail() {
             scrollTrigger: { 
               trigger: el, 
               start: 'top 85%', 
-              toggleActions: 'play none none none' 
+              toggleActions: 'play none none none',
+              invalidateOnRefresh: true,
             },
           }
         )
@@ -55,12 +54,16 @@ export default function AppsheetDetail() {
           start: 'top bottom',
           end: 'bottom top',
           scrub: true,
+          invalidateOnRefresh: true,
         },
       })
     }, pageRef)
 
+    ScrollTrigger.refresh()
+
     return () => {
       ctx.revert()
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
       lenis.destroy()
       gsap.ticker.remove(rafCallback)
     }
@@ -97,7 +100,7 @@ export default function AppsheetDetail() {
               src="/images/gloomie-stock.webp" 
               alt="Smart Stock Opname & Cashflow AppSheet Preview" 
               className="detail-hero-img"
-              style={{ width: '100%', height: '120%', objectFit: 'cover', display: 'block', willChange: 'transform' }} 
+              style={{ width: '100%', height: '120%', objectFit: 'cover', display: 'block', willChange: 'transform', transform: 'translateZ(0)', backfaceVisibility: 'hidden', }} 
             />
           </div>
           <div style={{ padding: '1.5rem 2rem', background: 'var(--card)', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>

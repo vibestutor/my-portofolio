@@ -64,7 +64,7 @@ const LIST_PROJECTS: ListProject[] = [
     num: '003', 
     title: 'Smart Stock Opname & Warehouse Logistics', 
     tags: ['AppSheet', 'Automation', 'Inventory'],
-    url: 'https://www.appsheet.com/demo...',
+    url: 'https://www.appsheet.com/start/c817474f-f604-41d3-9328-ad4cd2532ab6?platform=desktop#appName=MRinventorymanagementDEMO-63102697&vss=H4sIAAAAAAAAA52OvQ4CIRCE32VqnoDWmGiMNhobscBjSYh3cDk49UJ4dxd_Yqt2u7PzzU7GxdF1m3Rzhjzkz7aiCRJZYTf1pCAVZsGnIbQKQmGju6e4CHUoKEfxZhNFyPw9Kv__KuAM-eSso6HmVIr5F8PnSrBQ_SgC3Zj0qaVHSfaXwpoNzRjJ7LnCj6_j0s9vvfZmHQzHWd1GKndbTHqGUQEAAA==&view=Home',
     actionText: 'Cek Demo'
   },
   { 

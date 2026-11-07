@@ -1,0 +1,285 @@
+{
+    "hero": {
+    "badge": "Siap bikin sesuatu yang keren bareng?",
+    "heading": {
+      "line1": "Fullstack &",
+      "line2_highlight": "AI",
+      "line2_suffix": " Engineering"
+    },
+    "desc": "\"Saya menyulap operasional bisnis yang bikin pusing jadi aplikasi cerdas berbasis data. Biar Anda bisa ambil keputusan pasti—bukan pake ilmu kira-kira stok lagi. Lewat integrasi AI yang tepat, sistem Anda tetap terasa simpel dan instan di tangan orang awam. Hasilnya? Bisnis hemat biaya, operasional otomatis, dan pelanggan gak kabur ke kompetitor.\"",
+    "buttons": {
+      "work": "Lihat Karya",
+      "about": "Tentang Saya"
+    },
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "Tentang",
+    "headline": "\"Ngetik kode pake logika, ngerapihin visual pake hati.\"",
+    "p1": "\"Saya Muhamad Rahman — seorang Senior Fullstack Engineer yang tinggal di Tasikmalaya. Keahlian saya adalah membangun sistem cerdas (AI), antarmuka website yang sinematik/estetik, dan rekayasa produk digital skala besar dengan performa tinggi.",
+    "p2": "Karya-karya saya menggabungkan arsitektur backend yang kokoh dengan keindahan frontend yang ekspresif — menghasilkan produk yang tidak hanya punya sistem mesin yang kuat di dalam, tapi juga terlihat cantik di luar.\"",
+    "stats": {
+      "experience": "Tahun Pengalaman",
+      "apps": "Aplikasi Siap Pakai",
+      "ai": "Sistem Terintegrasi AI",
+      "focus": "Fokus Solusi Bisnis"
+    },
+    "image_label": "Muhamad Rahman — Tasikmalaya, 2026"
+  },
+  "showcase": {
+    "eyebrow": "Keahlian Utama",
+    "headline": "Solusi digital fungsional, dirancang tuntas.",
+    "subhead": "Menggabungkan logika pemrograman modern dan ketelitian desain visual untuk menyelesaikan masalah nyata.",
+    "cards": {
+      "web": {
+        "title": "Full-Stack Web Development",
+        "desc": "Membangun aplikasi web modern yang cepat, interaktif, dan responsif dari sisi tampilan hingga manajemen database backend.",
+        "badge": "Production"
+      },
+      "design": {
+        "title": "Visual & UI/UX Design",
+        "desc": "Merancang antarmuka bersih dan pengalaman pengguna yang nyaman, didukung aset grafis vektor presisi tinggi.",
+        "badge": "Creative"
+      },
+      "db": {
+        "title": "Database Architecture",
+        "desc": "Perancangan struktur data yang rapi dan aman untuk memastikan performa aplikasi tetap stabil dan minim celah error.",
+        "badge": "Optimized"
+      },
+      "workflow": {
+        "title": "Workflow & Low-Code Automation",
+        "desc": "Membuat sistem otomatisasi proses bisnis (seperti manajemen stok gudang) agar operasional jadi cepat dan efisien.",
+        "badge": "Practical"
+      },
+      "inventory": {
+        "title": "Data & Inventory Management",
+        "desc": "Sistem pencatatan terpusat secara real-time untuk memantau arus barang masuk, keluar, dan laporan finansial.",
+        "badge": "Live"
+      },
+      "print": {
+        "title": "Print & Production Pipeline",
+        "desc": "Menyiapkan berkas digital siap cetak berstandar tinggi (CorelDRAW & Photoshop) untuk kebutuhan produksi fisik / konveksi.",
+        "badge": "Specialized"
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Mari Berkolaborasi",
+    "headline": "Punya ide atau proyek menarik?",
+    "desc": "Aku selalu terbuka untuk berdiskusi seputar pengembangan web, otomatisasi bisnis, atau kebutuhan desain grafis. Yuk, ngobrol santai dan wujudkan visi digitalmu bareng!",
+    "email_aria": "Kirim Email ke Muhamad Rahman",
+    "socials": {
+      "resume": "Resume (PDF)"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 Muhamad Rahman. Dirancang dengan presisi.",
+    "nav": {
+      "top": "Atas",
+      "work": "Karya",
+      "about": "Tentang",
+      "contact": "Kontak"
+    }
+  },
+"experience": {
+    "eyebrow": "Pengalaman Kerja",
+    "headline": "Lima tahun, terus berkembang.",
+    "jobs": {
+      "gloomie_lead": {
+        "year": "2026 – Present",
+        "role": "Full-Stack Developer & E-Commerce Lead",
+        "company": "Gloomie Sunday Apparel, Tasikmalaya",
+        "desc": "Mengelola pengembangan aplikasi e-commerce secara penuh menggunakan Laravel dan Vite, sekaligus merancang alur produksi digital dan aset visual untuk kebutuhan operasional harian."
+      },
+      "gloomie_dev": {
+        "year": "2021 – 2026",
+        "role": "Full-Stack & Web Developer",
+        "company": "Gloomie Sunday Apparel (Fase Pengembangan Awal)",
+        "desc": "Merintis arsitektur backend, manajemen database, dan integrasi antarmuka web untuk membangun fondasi toko online dan sistem manajemen produk."
+      },
+      "smart_stock": {
+        "year": "2021 – Present",
+        "role": "Logistics & Systems Automation Specialist",
+        "company": "Smart Stock Opname Project",
+        "desc": "Membangun dan mengembangkan sistem otomatisasi inventaris gudang berbasis low-code/AppSheet yang terintegrasi secara real-time untuk memangkas kesalahan hitung manual."
+      },
+      "alias": {
+        "year": "2020 – Present",
+        "role": "IT & Operations Support",
+        "company": "Alias Fashion, Tasikmalaya",
+        "desc": "Menangani infrastruktur sistem operasional harian, manajemen data inventaris, dan tata kelola teknologi pendukung untuk kelancaran bisnis."
+      }
+    }
+  },
+  "journal": {
+    "eyebrow": "Jurnal",
+    "headline": "Catatan & Pengalaman Teknis.",
+    "button": "Semua Artikel",
+    "posts": {
+      "p1": {
+        "date": "Okt 24, 2026",
+        "title": "Membangun E-Commerce Fesyen yang Cepat dan Fungsional dengan Laravel",
+        "excerpt": "Cerita di balik layar pembuatan platform Gloomie Sunday: bagaimana mengoptimalkan performa halaman, keranjang belanja, hingga proses checkout agar serba cepat tanpa ribet."
+      },
+      "p2": {
+        "date": "Sep 15, 2026",
+        "title": "Otomasi Stok Gudang: Mengganti Pencatatan Manual dengan Sistem AppSheet",
+        "excerpt": "Langkah praktis mendigitalkan alur inventaris barang masuk dan keluar untuk bisnis konveksi agar laporan keuangan serta stok selalu sinkron secara real-time."
+      },
+      "p3": {
+        "date": "Agu 02, 2026",
+        "title": "Ketelitian File Vektor: Dari Layar CorelDRAW Menuju Produksi Cetak Fisik",
+        "excerpt": "Pentingnya memahami persiapan berkas grafis secara presisi—mulai dari garis, warna, hingga format bersih—sebelum masuk ke mesin cetak pakaian."
+      }
+    }
+  },
+"projects": {
+    "eyebrow": "Karya Pilihan",
+    "headline": "Aplikasi siap pakai yang langsung menyelesaikan masalah.",
+    "button": "Semua Proyek",
+    "alert_dev": "Proyek ini sedang dalam tahap dokumentasi/pembuatan.",
+    "featured": {
+      "f1": {
+        "category": "Full-Stack E-Commerce & Retail App",
+        "title": "Gloomie Sunday — Online Store & Web App",
+        "desc": "Platform toko online serba cepat yang bikin proses pilih produk, keranjang, sampai checkout jadi mulus banget tanpa ribet.",
+        "action": "Baca Case Study"
+      },
+      "f2": {
+        "category": "Logistics Automation & Low-Code System",
+        "title": "Smart Stock Opname — Otomasi Stok Gudang Tanpa Pusing",
+        "desc": "Sistem pengecekan inventaris gudang cerdas berbasis otomatisasi untuk menghilangkan kesalahan hitung manual dan bikin laporan jadi instan.",
+        "action": "Lihat Detail"
+      }
+    },
+    "list": {
+      "l1": {
+        "title": "Gloomie Interactive E-Commerce Experience",
+        "action": "Kunjungi Website"
+      },
+      "l2": {
+        "title": "Vector Artwork & Apparel Print Prep",
+        "action": "Lihat Galeri"
+      },
+      "l3": {
+        "title": "Smart Stock Opname & Warehouse Logistics",
+        "action": "Cek Demo"
+      },
+      "l4": {
+        "title": "Interactive 3D Web Product Preview",
+        "action": "Segera Hadir"
+      }
+    }
+  },
+  "gloomie_detail": {
+    "back_home": "kembali ke beranda",
+    "header": {
+      "eyebrow": "full-stack case study & architecture",
+      "title": "Gloomie Sunday Apparel — Direct-to-Consumer (D2C) E-Commerce & Web App Ecosystem",
+      "desc": "Platform toko online independen berkinerja tinggi yang menggabungkan fitur interaktif setara Shopee & TikTok Seller Center, arsitektur checkout ganda instan, serta integrasi admin logistik & analitik terpusat."
+    },
+    "hero": {
+      "status_label": "Status Platform",
+      "status_value": "Production Live — D2C Online Store & Enterprise Seller Admin",
+      "visit_btn": "kunjungi live website"
+    },
+    "sec1": {
+      "title": "1. Dynamic Video Hero & Collection Controller",
+      "card1_title": "Video Hero Slider & Article Controller",
+      "card1_desc": "Slider 5 video sinematik artikel fashion (Pitstop, Raised by Hope, Flowtrack). Tombol Shop Now dan Campaign bekerja dinamis mengikuti video artikel yang aktif, langsung mengarahkan pembeli ke koleksi spesifik.",
+      "card2_title": "Interactive Notch Header & 3D Logo",
+      "card2_desc": "Header terinspirasi Notch iPhone 12. Saat di-scroll, teks brand berubah mulus menjadi logo Gloomie 3D interaktif yang berputar.",
+      "img_cap": "Visual Showcase: Dynamic Video Hero Slider, Article Controller Buttons, & Notch Header."
+    },
+    "sec2": {
+      "title": "2. Weekly Drop Flash Sale & Auto-Play Video Reviews",
+      "card1_title": "Weekly Drop Flash Sale",
+      "card1_desc": "Section khusus promo mingguan dengan header visual, banner interaktif, dan penanda harga dicoret (misal: 400k menjadi 200k) untuk meningkatkan keputusan beli instan.",
+      "card2_title": "Music-Card Customer Reviews",
+      "card2_desc": "Slider testimoni berformat video potret layaknya pemutar musik yang dapat digeser dan otomatis berputar (auto-play) saat pertama kali memasuki viewport scroll.",
+      "img_cap": "Visual Showcase: Weekly Drop Campaign, Diskon Harga Coret, & Auto-Play Video Customer Reviews."
+    },
+    "sec3": {
+      "title": "3. High-Conversion Dual Checkout Engine",
+      "desc": "Menghilangkan friksi alur transaksi untuk mencegah pembeli membatalkan niat belanja (cart abandonment):",
+      "card1_title": "Express \"Buy Now\" Direct Flow",
+      "card1_desc": "Pembeli 1 artikel bisa langsung klik Buy Now dari halaman produk untuk melompat langsung ke pembayaran tanpa masuk halaman keranjang.",
+      "card2_title": "Traditional Cart & Address Vault",
+      "card2_desc": "Mendukung guest checkout tanpa paksaan login, serta fitur Address Vault bagi user terdaftar agar tidak perlu mengetik ulang form alamat.",
+      "img_cap": "Visual Showcase: Express Buy Now Flow, Dynamic Cart Manager, & Guest/Registered Checkout."
+    },
+    "sec4": {
+      "title": "4. Auto-Geolocation & Hybrid Logistics Engine",
+      "card1_title": "Auto Currency & Language",
+      "card1_desc": "Deteksi otomatis lokasi visitor (misal: Jepang/China) lalu mengonversi harga ke JPY/CNY dan bahasa setempat secara instan, plus switcher manual via sidebar.",
+      "card2_title": "Biteship API & Midtrans",
+      "card2_desc": "Otomasi ongkir ekspedisi domestik (J&T dll.) & penanganan pengiriman internasional via POS, didukung payment gateway lengkap (QRIS, Bank, Visa/Mastercard).",
+      "img_cap": "Visual Showcase: Auto-Currency Switching, Multi-Language Sidebar, & Biteship Logistics Integration."
+    },
+    "sec5": {
+      "title": "5. Enterprise Seller Admin Center",
+      "desc": "Panel kelola mandiri yang dirancang setara Dasbor Operasional Shopee/TikTok Seller Center:",
+      "img_cap": "Visual Showcase: Dashboard Admin, Request Auto-Pickup Kurir, & Suite Integrasi GA4 Looker Studio & Pixel Analytics.",
+      "list1_title": "1-Click Auto-Pickup Courier:",
+      "list1_desc": "Begitu pesanan diterima, 1 klik akan otomatis memanggil kurir menjemput paket ke gudang.",
+      "list2_title": "Tracking Resi & Live Order Status:",
+      "list2_desc": "Halaman khusus pembeli dan admin untuk memantau perjalanan paket dari diproses hingga sampai ke tujuan.",
+      "list3_title": "Analytics & Cloudflare Security Suite:",
+      "list3_desc": "Terintegrasi dengan dasbor GA4 Looker Studio (memantau sumber trafik dari kampanye Google, Meta, dan TikTok ads), Pixel analytics, serta perlindungan Cloudflare Anti-Bot."
+    },
+    "cta": {
+      "title": "tertarik membangun platform e-commerce / web app serupa?",
+      "desc": "mari diskusikan bagaimana saya dapat membantu Anda membangun sistem aplikasi web berkinerja tinggi.",
+      "btn": "kembali ke beranda"
+    }
+  },
+  "appsheet_detail": {
+    "back_home": "kembali ke beranda",
+    "header": {
+      "eyebrow": "low-code enterprise automation",
+      "title": "Smart Stock Opname & Financial Asset Management System",
+      "desc": "Sistem terpadu berbasis AppSheet yang mengombinasikan otomasi stok gudang, pelacakan aset menyeluruh, pencatatan arus kas perusahaan, serta keamanan akses berbasis role (Staff Gudang vs Owner)."
+    },
+    "hero": {
+      "status_label": "Platform & Status",
+      "status_value": "Google AppSheet & Cloud Database — Enterprise Ready",
+      "badge": "Siap Digunakan",
+      "demo_btn": "Cek Demo Live"
+    },
+    "sec1": {
+      "title": "1. Tantangan Operasional & Solusi Terintegrasi",
+      "card1_title": "Masalah Konvensional",
+      "card1_desc": "Pencatatan inventaris gudang yang terpisah dari pembukuan keuangan membuat manajemen kesulitan memantau valuasi aset riil dan arus kas keluar-masuk perusahaan secara akurat.",
+      "card2_title": "Solusi All-in-One AppSheet",
+      "card2_desc": "Menggabungkan manajemen stok, audit aset, dan pelacakan cashflow finansial dalam satu ekosistem aplikasi mobile/desktop yang terotomasi penuh."
+    },
+    "sec2": {
+      "title": "2. Fitur Utama & Multi-Role Security",
+      "card1_title": "Scan Barcode & QR Cepat",
+      "card1_desc": "Identifikasi produk dan aset fisik secara kilat menggunakan kamera perangkat untuk opname gudang tanpa risiko kesalahan hitung manual.",
+      "card2_title": "Real-Time Inventory Sync",
+      "card2_desc": "Setiap pergerakan barang otomatis memperbarui database pusat detik itu juga, menjaga akurasi data stok antara fisik dan sistem.",
+      "card3_title": "Cashflow (Uang Masuk & Keluar)",
+      "card3_desc": "Pencatatan arus kas operasional harian terintegrasi, memudahkan manajemen melacak pendapatan, pengeluaran, dan sisa saldo perusahaan secara transparan.",
+      "card4_title": "Comprehensive Asset Overview",
+      "card4_desc": "Memantau seluruh valuasi aset perusahaan secara menyeluruh melalui dashboard analitik ringkas untuk mendukung pengambilan keputusan bisnis.",
+      "card5_title": "Role-Based Access Control (Staff vs Owner)",
+      "card5_desc": "Meskipun berada dalam satu aplikasi terpusat, sistem dilengkapi sistem login otomatis berbasis email. Staff gudang hanya dapat mengakses menu operasional stok, sementara menu laporan keuangan, cashflow, dan valuasi aset eksklusif hanya dapat diakses oleh Admin/Owner perusahaan."
+    },
+    "sec3": {
+      "title": "3. Keunggulan & Dampak Efisiensi Bisnis",
+      "list1_title": "Kontrol Finansial & Aset Penuh:",
+      "list1_desc": "Pimpinan perusahaan dapat melihat kondisi kesehatan keuangan dan total valuasi aset kapan pun secara real-time.",
+      "list2_title": "Audit & Rekap Instan:",
+      "list2_desc": "Memangkas waktu opname gudang dan pencatatan kas hingga 70%, menghindari risiko kebocoran data atau selisih nominal.",
+      "list3_title": "Keamanan Akses Terjamin:",
+      "list3_desc": "Hak akses menu dibatasi secara otomatis berdasarkan akun login, memastikan kerahasiaan data finansial perusahaan tetap aman."
+    },
+    "cta": {
+      "title": "tertarik mengotomasi sistem operasional & keuangan perusahaan Anda?",
+      "desc": "mari diskusikan pembuatan aplikasi custom berbasis low-code atau web app sesuai kebutuhan bisnis Anda.",
+      "demo_btn": "Coba Demo AppSheet",
+      "back_btn": "kembali ke beranda"
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+    "hero": {
+    "badge": "Ready to build something epic together?",
+    "heading": {
+      "line1": "Fullstack &",
+      "line2_highlight": "AI",
+      "line2_suffix": " Engineering"
+    },
+    "desc": "\"I turn chaotic business operations into smart, data-driven apps. So you can make crystal-clear decisions—no more guessing games with your inventory. Through seamless AI integration, your systems stay brutally simple and instantly usable for anyone. The result? Slashed costs, automated workflows, and customers who stick around.\"",
+    "buttons": {
+      "work": "View Work",
+      "about": "About me"
+    },
+    "scroll": "Scroll"
+  },
+  "about": {
+    "eyebrow": "About",
+    "headline": "\"Coding with logic, crafting visuals with soul.\"",
+    "p1": "\"I'm Muhamad Rahman — a Senior Fullstack Engineer based in Tasikmalaya. My sweet spot is building smart AI systems, cinematic web interfaces, and high-performance digital products at scale.",
+    "p2": "My work blends bulletproof backend architecture with expressive frontend aesthetics. I build products that are just as powerful under the hood as they are stunning on the outside.\"",
+    "stats": {
+      "experience": "Years of Experience",
+      "apps": "Production-Ready Apps",
+      "ai": "AI-Integrated Systems",
+      "focus": "Business-Driven Solutions"
+    },
+    "image_label": "Muhamad Rahman — Tasikmalaya, 2026"
+  },
+  "showcase": {
+    "eyebrow": "Core Expertise",
+    "headline": "End-to-end digital solutions, built with purpose.",
+    "subhead": "Fusing modern engineering logic with sharp visual precision to solve real-world problems.",
+    "cards": {
+      "web": {
+        "title": "Full-Stack Web Development",
+        "desc": "Building lightning-fast, interactive web apps—from sleek frontends to heavy-duty backend databases.",
+        "badge": "Production"
+      },
+      "design": {
+        "title": "Visual & UI/UX Design",
+        "desc": "Designing clean, intuitive interfaces and frictionless user journeys, backed by pixel-perfect vector graphics.",
+        "badge": "Creative"
+      },
+      "db": {
+        "title": "Database Architecture",
+        "desc": "Architecting neat, secure data structures to keep your apps performing smoothly with zero hiccups.",
+        "badge": "Optimized"
+      },
+      "workflow": {
+        "title": "Workflow & Low-Code Automation",
+        "desc": "Automating business workflows (like inventory management) so operations run fast, lean, and efficient.",
+        "badge": "Practical"
+      },
+      "inventory": {
+        "title": "Data & Inventory Management",
+        "desc": "Real-time, centralized tracking systems to monitor stock flow and financial reporting without the headache.",
+        "badge": "Live"
+      },
+      "print": {
+        "title": "Print & Production Pipeline",
+        "desc": "Prepping high-standard, print-ready digital files (CorelDRAW & Photoshop) for physical apparel manufacturing.",
+        "badge": "Specialized"
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Let's Collaborate",
+    "headline": "Got an idea or exciting project?",
+    "desc": "I'm always down to chat about web development, business automation, or your graphic design needs. Let's grab a virtual coffee and bring your digital vision to life!",
+    "email_aria": "Send an email to Muhamad Rahman",
+    "socials": {
+      "resume": "Resume (PDF)"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 Muhamad Rahman. Crafted with precision.",
+    "nav": {
+      "top": "Top",
+      "work": "Work",
+      "about": "About",
+      "contact": "Contact"
+    }
+  },
+"experience": {
+    "eyebrow": "Experience",
+    "headline": "Five years deep, Still leveling up.",
+    "jobs": {
+      "gloomie_lead": {
+        "year": "2026 – Present",
+        "role": "Full-Stack Developer & E-Commerce Lead",
+        "company": "Gloomie Sunday Apparel, Tasikmalaya",
+        "desc": "Spearheading end-to-end e-commerce development with Laravel and Vite, while directing the digital production pipeline and visual assets for daily ops."
+      },
+      "gloomie_dev": {
+        "year": "2021 – 2026",
+        "role": "Full-Stack & Web Developer",
+        "company": "Gloomie Sunday Apparel (Early Stage)",
+        "desc": "Bootstrapped the backend architecture, database management, and UI integrations to lay the groundwork for the online store and product management system."
+      },
+      "smart_stock": {
+        "year": "2021 – Present",
+        "role": "Logistics & Systems Automation Specialist",
+        "company": "Smart Stock Opname Project",
+        "desc": "Architected a real-time low-code/AppSheet inventory automation system to streamline warehouse logistics and eliminate manual counting errors."
+      },
+      "alias": {
+        "year": "2020 – Present",
+        "role": "IT & Operations Support",
+        "company": "Alias Fashion, Tasikmalaya",
+        "desc": "Managing daily IT operations, inventory data infrastructure, and tech support governance to keep the business running smoothly."
+      }
+    }
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "headline": "Tech Notes & Case Studies.",
+    "button": "All Articles",
+    "posts": {
+      "p1": {
+        "date": "Oct 24, 2026",
+        "title": "Building a Blazing Fast, Functional Fashion E-Commerce with Laravel",
+        "excerpt": "Behind the scenes of the Gloomie Sunday platform: optimizing page loads, cart states, and checkout flows for a frictionless shopping experience."
+      },
+      "p2": {
+        "date": "Sep 15, 2026",
+        "title": "Warehouse Automation: Ditching Manual Logs for an AppSheet System",
+        "excerpt": "A practical guide to digitizing inbound/outbound apparel inventory, keeping stock levels and financial reports synced in real-time."
+      },
+      "p3": {
+        "date": "Aug 02, 2026",
+        "title": "Vector Precision: From CorelDRAW Screens to Physical Print Production",
+        "excerpt": "Why meticulous graphic prep matters—from clean nodes and color profiles to print-ready formats—before the design hits the press."
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Selected Works",
+    "headline": "Production-ready apps that actually solve problems.",
+    "button": "All Projects",
+    "alert_dev": "This project is currently under documentation/development.",
+    "featured": {
+      "f1": {
+        "category": "Full-Stack E-Commerce & Retail App",
+        "title": "Gloomie Sunday — Online Store & Web App",
+        "desc": "A lightning-fast online storefront that makes browsing, cart management, and checkout completely frictionless.",
+        "action": "Read Case Study"
+      },
+      "f2": {
+        "category": "Logistics Automation & Low-Code System",
+        "title": "Smart Stock Opname — Stress-Free Inventory Automation",
+        "desc": "An intelligent automated warehouse tracking system that eliminates manual counting errors and generates instant reports.",
+        "action": "View Details"
+      }
+    },
+    "list": {
+      "l1": {
+        "title": "Gloomie Interactive E-Commerce Experience",
+        "action": "Visit Website"
+      },
+      "l2": {
+        "title": "Vector Artwork & Apparel Print Prep",
+        "action": "View Gallery"
+      },
+      "l3": {
+        "title": "Smart Stock Opname & Warehouse Logistics",
+        "action": "Check Demo"
+      },
+      "l4": {
+        "title": "Interactive 3D Web Product Preview",
+        "action": "Coming Soon"
+      }
+    }
+  },
+ "gloomie_detail": {
+    "back_home": "back to home",
+    "header": {
+      "eyebrow": "full-stack case study & architecture",
+      "title": "Gloomie Sunday Apparel — Direct-to-Consumer (D2C) E-Commerce & Web App Ecosystem",
+      "desc": "A high-performance independent storefront combining TikTok Shop-level interactivity, lightning-fast dual checkout architecture, and a centralized logistics & analytics admin hub."
+    },
+    "hero": {
+      "status_label": "Platform Status",
+      "status_value": "Production Live — D2C Online Store & Enterprise Seller Admin",
+      "visit_btn": "visit live website"
+    },
+    "sec1": {
+      "title": "1. Dynamic Video Hero & Collection Controller",
+      "card1_title": "Video Hero Slider & Article Controller",
+      "card1_desc": "A 5-video cinematic slider featuring fashion drops. The 'Shop Now' and 'Campaign' buttons dynamically adapt to the active video, instantly routing buyers to specific collections.",
+      "card2_title": "Interactive Notch Header & 3D Logo",
+      "card2_desc": "An iPhone 12-inspired Notch header. On scroll, the brand typography seamlessly morphs into an interactive, rotating 3D Gloomie logo.",
+      "img_cap": "Visual Showcase: Dynamic Video Hero Slider, Article Controller Buttons, & Notch Header."
+    },
+    "sec2": {
+      "title": "2. Weekly Drop Flash Sale & Auto-Play Video Reviews",
+      "card1_title": "Weekly Drop Flash Sale",
+      "card1_desc": "A dedicated weekly promo section with visual headers, interactive banners, and strikethrough pricing (e.g., 400k down to 200k) to trigger instant purchase decisions.",
+      "card2_title": "Music-Card Customer Reviews",
+      "card2_desc": "A portrait video testimonial slider styled like a music player. Swipable and automatically plays when entering the scroll viewport.",
+      "img_cap": "Visual Showcase: Weekly Drop Campaign, Strikethrough Pricing, & Auto-Play Video Customer Reviews."
+    },
+    "sec3": {
+      "title": "3. High-Conversion Dual Checkout Engine",
+      "desc": "Eliminating transaction friction to prevent cart abandonment:",
+      "card1_title": "Express \"Buy Now\" Direct Flow",
+      "card1_desc": "Buyers can click 'Buy Now' on a single item to skip the cart entirely and jump straight to the payment gateway.",
+      "card2_title": "Traditional Cart & Address Vault",
+      "card2_desc": "Supports frictionless guest checkout with zero forced logins, plus an Address Vault for registered users so they never have to type their details twice.",
+      "img_cap": "Visual Showcase: Express Buy Now Flow, Dynamic Cart Manager, & Guest/Registered Checkout."
+    },
+    "sec4": {
+      "title": "4. Auto-Geolocation & Hybrid Logistics Engine",
+      "card1_title": "Auto Currency & Language",
+      "card1_desc": "Automatically detects visitor location (e.g., Japan/China) to convert prices to JPY/CNY and switch local languages instantly, backed by a manual sidebar toggle.",
+      "card2_title": "Biteship API & Midtrans",
+      "card2_desc": "Automated domestic shipping rates (J&T, etc.) and international postal routing, fully wired with complete payment gateways (QRIS, Bank Transfers, Visa/Mastercard).",
+      "img_cap": "Visual Showcase: Auto-Currency Switching, Multi-Language Sidebar, & Biteship Logistics Integration."
+    },
+    "sec5": {
+      "title": "5. Enterprise Seller Admin Center",
+      "desc": "A self-managed hub engineered to rival Shopee or TikTok Seller Center dashboards:",
+      "img_cap": "Visual Showcase: Admin Dashboard, Auto-Pickup Courier Request, & GA4 Looker Studio Analytics Suite.",
+      "list1_title": "1-Click Auto-Pickup Courier:",
+      "list1_desc": "The moment an order drops, one click summons the courier for warehouse pickup.",
+      "list2_title": "Live Tracking & Order Status:",
+      "list2_desc": "Dedicated tracking portals for both buyers and admins to monitor packages from processing to final delivery.",
+      "list3_title": "Analytics & Cloudflare Security Suite:",
+      "list3_desc": "Fully wired with GA4 Looker Studio (tracking real-time session sources across Google, Meta, and TikTok ads), Pixel analytics, and Cloudflare Anti-Bot protection."
+    },
+    "cta": {
+      "title": "interested in building a similar e-commerce / web app platform?",
+      "desc": "let's talk about how i can help you engineer a high-performance web system.",
+      "btn": "back to home"
+    }
+  },
+  "appsheet_detail": {
+    "back_home": "back to home",
+    "header": {
+      "eyebrow": "low-code enterprise automation",
+      "title": "Smart Stock Opname & Financial Asset Management System",
+      "desc": "An integrated AppSheet ecosystem combining warehouse inventory automation, holistic asset tracking, corporate cashflow monitoring, and role-based security (Warehouse Staff vs. Business Owner)."
+    },
+    "hero": {
+      "status_label": "Platform & Status",
+      "status_value": "Google AppSheet & Cloud Database — Enterprise Ready",
+      "badge": "Ready to Deploy",
+      "demo_btn": "View Live Demo"
+    },
+    "sec1": {
+      "title": "1. Operational Challenges & Integrated Solutions",
+      "card1_title": "The Conventional Bottleneck",
+      "card1_desc": "Siloed inventory logging and disconnected financial ledgers make it nearly impossible for management to accurately monitor real-time asset valuation and corporate cashflow.",
+      "card2_title": "The AppSheet All-in-One Solution",
+      "card2_desc": "Fusing stock management, asset auditing, and financial cashflow tracking into a single, fully automated mobile/desktop ecosystem."
+    },
+    "sec2": {
+      "title": "2. Core Features & Multi-Role Security",
+      "card1_title": "Instant Barcode & QR Scanning",
+      "card1_desc": "Rapid physical product and asset identification via device cameras for zero-error warehouse stocktakes.",
+      "card2_title": "Real-Time Inventory Sync",
+      "card2_desc": "Every single item movement triggers an instant central database update, maintaining perfect sync between physical stock and digital records.",
+      "card3_title": "Cashflow Tracking (Inbound & Outbound)",
+      "card3_desc": "Integrated daily operational cashflow logging, making it effortless for management to track revenue, expenses, and transparent corporate balances.",
+      "card4_title": "Comprehensive Asset Overview",
+      "card4_desc": "Monitor the company's entire asset valuation comprehensively via a compact analytics dashboard to drive informed business decisions.",
+      "card5_title": "Role-Based Access Control (Staff vs. Owner)",
+      "card5_desc": "Housed in one central app, the system features automated email-based logins. Warehouse staff are restricted to operational stock menus, while financial reports, cashflow ledgers, and asset valuations are locked exclusively for the Admin/Owner."
+    },
+    "sec3": {
+      "title": "3. Business Impact & Efficiency Edge",
+      "list1_title": "Total Financial & Asset Control:",
+      "list1_desc": "Leadership gains absolute, real-time visibility into the company's financial health and total asset valuation anytime, anywhere.",
+      "list2_title": "Instant Audits & Recaps:",
+      "list2_desc": "Slashes warehouse stocktaking and cash logging time by up to 70%, nullifying data leakage risks and nominal discrepancies.",
+      "list3_title": "Bulletproof Access Security:",
+      "list3_desc": "Menu privileges are automatically restricted based on the logged-in user, guaranteeing total confidentiality for corporate financial data."
+    },
+    "cta": {
+      "title": "interested in automating your company's operations & finances?",
+      "desc": "let's discuss building a custom low-code application or web app tailored to your business needs.",
+      "demo_btn": "Try AppSheet Demo",
+      "back_btn": "back to home"
+    }
+  }
+}

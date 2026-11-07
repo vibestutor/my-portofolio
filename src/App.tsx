@@ -1,11 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Lenis from 'lenis'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+import './i18n'
+
 import Cursor     from './components/Cursor'
 import ScrollToTop from './components/ScrollToTop'
+import PreferencesSelector from './components/PreferencesSelector'
 import Loader     from './components/Loader'
 import Navbar     from './components/Navbar'
 import Hero       from './Sections/Hero'
@@ -19,6 +22,7 @@ import Contact    from './Sections/Contact'
 
 import ProjectDetail from './pages/projectwebdetail'
 import AppsheetDetail from './pages/appsheetdetail'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -65,15 +69,18 @@ function Home() {
 
 export default function App() {
   return (
-    <>
+    // Suspense menahan render UI sampai file translation.json selesai di-download
+    <Suspense fallback={<div className="h-screen w-screen bg-black"></div>}>
       <Cursor />
       <ScrollToTop />
+
+      <PreferencesSelector />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
         <Route path="/projects/appsheet-stock" element={<AppsheetDetail />} />
       </Routes>
-    </>
+    </Suspense>
   )
 }

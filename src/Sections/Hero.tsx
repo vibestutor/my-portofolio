@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ArrowRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import { useThreeScene } from '../hooks/useThreeScene'
 
 export default function Hero() {
@@ -11,6 +12,8 @@ export default function Hero() {
   const subRef     = useRef<HTMLParagraphElement>(null)
   const badgeRef   = useRef<HTMLDivElement>(null)
   const actionsRef = useRef<HTMLDivElement>(null)
+  
+  const { t } = useTranslation()
 
   useThreeScene(canvasRef)
 
@@ -42,22 +45,22 @@ export default function Hero() {
       <div className="container hero-content">
         <div ref={badgeRef} className="hero-available" style={{ opacity: 0 }}>
           <span className="hero-available-dot" />
-          Siap bikin sesuatu yang keren bareng?
+          {t('hero.badge')}
         </div>
 
          <div className="hero-heading display-xl">
            <span className="hero-heading-line">
-            <span ref={line1Ref} style={{ display: 'block' }}>Fullstack &amp;</span>
+            <span ref={line1Ref} style={{ display: 'block' }}>{t('hero.heading.line1')}</span>
            </span>
            <span className="hero-heading-line">
              <span ref={line2Ref} style={{ display: 'block' }}>
-              <span style={{ color: 'var(--accent)' }}>AI</span> Engineering
+              <span style={{ color: 'var(--accent)' }}>{t('hero.heading.line2_highlight')}</span>{t('hero.heading.line2_suffix')}
              </span>
            </span>
          </div>
 
         <p ref={subRef} className="body-lg hero-sub" style={{ opacity: 0 }}>
-          "Saya menyulap operasional bisnis yang bikin pusing jadi aplikasi cerdas berbasis data. Biar Anda bisa ambil keputusan pasti—bukan pake ilmu kira-kira stok lagi. Lewat integrasi AI yang tepat, sistem Anda tetap terasa simpel dan instan di tangan orang awam. Hasilnya? Bisnis hemat biaya, operasional otomatis, dan pelanggan gak kabur ke kompetitor."
+          {t('hero.desc')}
         </p>
 
         <div ref={actionsRef} className="hero-actions" style={{ opacity: 0 }}>
@@ -66,21 +69,21 @@ export default function Hero() {
             className="btn-primary"
             onClick={(e) => { e.preventDefault(); scrollTo('#projects') }}
           >
-            View Work <ArrowRight size={15} />
+            {t('hero.buttons.work')} <ArrowRight size={15} />
           </a>
           <a
             href="#about"
             className="btn-ghost"
             onClick={(e) => { e.preventDefault(); scrollTo('#about') }}
           >
-            About me <ArrowRight size={13} />
+            {t('hero.buttons.about')} <ArrowRight size={13} />
           </a>
         </div>
       </div>
 
       <div className="hero-scroll-hint" aria-hidden="true">
         <span className="hero-scroll-line" />
-        <span className="hero-scroll-label">Scroll</span>
+        <span className="hero-scroll-label">{t('hero.scroll')}</span>
       </div>
     </section>
   )

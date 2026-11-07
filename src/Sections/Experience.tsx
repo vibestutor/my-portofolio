@@ -1,38 +1,41 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useTranslation } from 'react-i18next'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const TIMELINE = [
-  {
-    year: '2026 – Present',
-    role: 'Full-Stack Developer & E-Commerce Lead',
-    company: 'Gloomie Sunday Apparel, Tasikmalaya',
-    desc: 'Mengelola pengembangan aplikasi e-commerce secara penuh menggunakan Laravel dan Vite, sekaligus merancang alur produksi digital dan aset visual untuk kebutuhan operasional harian.',
-  },
-  {
-    year: '2021 – 2026',
-    role: 'Full-Stack & Web Developer',
-    company: 'Gloomie Sunday Apparel (Fase Pengembangan Awal)',
-    desc: 'Merintis arsitektur backend, manajemen database, dan integrasi antarmuka web untuk membangun fondasi toko online dan sistem manajemen produk.',
-  },
-  {
-    year: '2021 – Present',
-    role: 'Logistics & Systems Automation Specialist',
-    company: 'Smart Stock Opname Project',
-    desc: 'Membangun dan mengembangkan sistem otomatisasi inventaris gudang berbasis low-code/AppSheet yang terintegrasi secara real-time untuk memangkas kesalahan hitung manual.',
-  },
-  {
-    year: '2020 – Present',
-    role: 'IT & Operations Support',
-    company: 'Alias Fashion, Tasikmalaya',
-    desc: 'Menangani infrastruktur sistem operasional harian, manajemen data inventaris, dan tata kelola teknologi pendukung untuk kelancaran bisnis.',
-  },
-]
-
 export default function Experience() {
   const sectionRef = useRef<HTMLElement>(null)
+  const { t } = useTranslation()
+
+  // Timeline dipindah ke dalam untuk mengambil data terjemahan
+  const TIMELINE = [
+    {
+      year: t('experience.jobs.gloomie_lead.year'),
+      role: t('experience.jobs.gloomie_lead.role'),
+      company: t('experience.jobs.gloomie_lead.company'),
+      desc: t('experience.jobs.gloomie_lead.desc'),
+    },
+    {
+      year: t('experience.jobs.gloomie_dev.year'),
+      role: t('experience.jobs.gloomie_dev.role'),
+      company: t('experience.jobs.gloomie_dev.company'),
+      desc: t('experience.jobs.gloomie_dev.desc'),
+    },
+    {
+      year: t('experience.jobs.smart_stock.year'),
+      role: t('experience.jobs.smart_stock.role'),
+      company: t('experience.jobs.smart_stock.company'),
+      desc: t('experience.jobs.smart_stock.desc'),
+    },
+    {
+      year: t('experience.jobs.alias.year'),
+      role: t('experience.jobs.alias.role'),
+      company: t('experience.jobs.alias.company'),
+      desc: t('experience.jobs.alias.desc'),
+    },
+  ]
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -56,13 +59,13 @@ export default function Experience() {
   }, [])
 
   return (
-    <section id="experience" className="section" ref={sectionRef} aria-label="Jalur Pengalaman">
+    <section id="experience" className="section" ref={sectionRef} aria-label={t('experience.eyebrow')}>
       <div className="container">
         <div className="reveal" style={{ marginBottom: 16 }}>
-          <span className="eyebrow">Pengalaman Kerja</span>
+          <span className="eyebrow">{t('experience.eyebrow')}</span>
         </div>
         <h2 className="display-lg reveal" style={{ marginBottom: 0 }}>
-          Lima tahun, terus berkembang.
+          {t('experience.headline')}
         </h2>
 
         <div className="timeline">

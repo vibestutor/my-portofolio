@@ -3,81 +3,66 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowUpRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 gsap.registerPlugin(ScrollTrigger)
 
-interface FeaturedProject {
-  id: string
-  category: string
-  title: string
-  desc: string
-  img: string
-  detailUrl: string 
-  actionText: string
-}
-
-interface ListProject {
-  num: string
-  title: string
-  tags: string[]
-  url: string
-  actionText: string
-}
-
-const FEATURED: FeaturedProject[] = [
-  {
-    id: 'f1',
-    category: 'Full-Stack E-Commerce & Retail App',
-    title: 'Gloomie Sunday — Online Store & Web App',
-    desc: 'Platform toko online serba cepat yang bikin proses pilih produk, keranjang, sampai checkout jadi mulus banget tanpa ribet.',
-    img: '/images/gloomie-ecommerce-cover.webp',
-    detailUrl: '/projects/gloomie-sunday', // 
-    actionText: 'Baca Case Study' //
-  },
-  {
-    id: 'f2',
-    category: 'Logistics Automation & Low-Code System',
-    title: 'Smart Stock Opname — Otomasi Stok Gudang Tanpa Pusing',
-    desc: 'Sistem pengecekan inventaris gudang cerdas berbasis otomatisasi untuk menghilangkan kesalahan hitung manual dan bikin laporan jadi instan.',
-    img: '/images/gloomie-stock.webp',
-    detailUrl: '/projects/appsheet-stock',
-    actionText: 'Lihat Detail'
-  },
-]
-
-const LIST_PROJECTS: ListProject[] = [
-  { 
-    num: '001', 
-    title: 'Gloomie Interactive E-Commerce Experience', 
-    tags: ['Laravel', 'GSAP', 'Lenis', 'Vite'],
-    url: 'https://gloomiesundayapparel.com',
-    actionText: 'Kunjungi Website'
-  },
-  { 
-    num: '002', 
-    title: 'Vector Artwork & Apparel Print Prep', 
-    tags: ['CorelDRAW', 'Photoshop', 'Vector Graphic', 'Print Production'],
-    url: '/designs',
-    actionText: 'Lihat Galeri'
-  },
-  { 
-    num: '003', 
-    title: 'Smart Stock Opname & Warehouse Logistics', 
-    tags: ['AppSheet', 'Automation', 'Inventory'],
-    url: 'https://www.appsheet.com/start/c817474f-f604-41d3-9328-ad4cd2532ab6?platform=desktop#appName=MRinventorymanagementDEMO-63102697&vss=H4sIAAAAAAAAA52OvQ4CIRCE32VqnoDWmGiMNhobscBjSYh3cDk49UJ4dxd_Yqt2u7PzzU7GxdF1m3Rzhjzkz7aiCRJZYTf1pCAVZsGnIbQKQmGju6e4CHUoKEfxZhNFyPw9Kv__KuAM-eSso6HmVIr5F8PnSrBQ_SgC3Zj0qaVHSfaXwpoNzRjJ7LnCj6_j0s9vvfZmHQzHWd1GKndbTHqGUQEAAA==&view=Home',
-    actionText: 'Cek Demo'
-  },
-  { 
-    num: '004', 
-    title: 'Interactive 3D Web Product Preview', 
-    tags: ['Three.js', 'GLTFLoader', 'JavaScript'],
-    url: '#',
-    actionText: 'Segera Hadir'
-  },
-]
-
-export default function projects() {
+export default function Projects() {
   const sectionRef = useRef<HTMLElement>(null)
+  const { t } = useTranslation()
+
+  // Array dipindah ke dalam fungsi komponen agar bisa menggunakan hook t()
+  const FEATURED = [
+    {
+      id: 'f1',
+      category: t('projects.featured.f1.category'),
+      title: t('projects.featured.f1.title'),
+      desc: t('projects.featured.f1.desc'),
+      img: '/images/gloomie-ecommerce-cover.webp',
+      detailUrl: '/projects/gloomie-sunday',
+      actionText: t('projects.featured.f1.action')
+    },
+    {
+      id: 'f2',
+      category: t('projects.featured.f2.category'),
+      title: t('projects.featured.f2.title'),
+      desc: t('projects.featured.f2.desc'),
+      img: '/images/gloomie-stock.webp',
+      detailUrl: '/projects/appsheet-stock',
+      actionText: t('projects.featured.f2.action')
+    },
+  ]
+
+  const LIST_PROJECTS = [
+    { 
+      num: '001', 
+      title: t('projects.list.l1.title'), 
+      tags: ['Laravel', 'GSAP', 'Lenis', 'Vite'],
+      url: 'https://gloomiesundayapparel.com',
+      actionText: t('projects.list.l1.action')
+    },
+    { 
+      num: '002', 
+      title: t('projects.list.l2.title'), 
+      tags: ['CorelDRAW', 'Photoshop', 'Vector Graphic', 'Print Production'],
+      url: '/designs',
+      actionText: t('projects.list.l2.action')
+    },
+    { 
+      num: '003', 
+      title: t('projects.list.l3.title'), 
+      tags: ['AppSheet', 'Automation', 'Inventory'],
+      url: 'https://www.appsheet.com/start/c817474f-f604-41d3-9328-ad4cd2532ab6?platform=desktop#appName=MRinventorymanagementDEMO-63102697&vss=H4sIAAAAAAAAA52OvQ4CIRCE32VqnoDWmGiMNhobscBjSYh3cDk49UJ4dxd_Yqt2u7PzzU7GxdF1m3Rzhjzkz7aiCRJZYTf1pCAVZsGnIbQKQmGju6e4CHUoKEfxZhNFyPw9Kv__KuAM-eSso6HmVIr5F8PnSrBQ_SgC3Zj0qaVHSfaXwpoNzRjJ7LnCj6_j0s9vvfZmHQzHWd1GKndbTHqGUQEAAA==&view=Home',
+      actionText: t('projects.list.l3.action')
+    },
+    { 
+      num: '004', 
+      title: t('projects.list.l4.title'), 
+      tags: ['Three.js', 'GLTFLoader', 'JavaScript'],
+      url: '#',
+      actionText: t('projects.list.l4.action')
+    },
+  ]
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -106,20 +91,23 @@ export default function projects() {
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
     if (!url || url === '#') {
       e.preventDefault()
-      alert('Proyek ini sedang dalam tahap dokumentasi/pembuatan.')
+      // Teks alert diambil dari JSON agar sesuai bahasa
+      alert(t('projects.alert_dev'))
     }
   }
 
   return (
-    <section id="projects" className="section" ref={sectionRef} aria-label="Featured Projects">
+    <section id="projects" className="section" ref={sectionRef} aria-label={t('projects.eyebrow')}>
       <div className="container">
         <div className="section-header-inner reveal" style={{ marginBottom: 60 }}>
           <div>
-            <span className="eyebrow" style={{ display: 'block', marginBottom: 14 }}>Karya Pilihan</span>
-            <h2 className="display-lg">Aplikasi siap pakai yang langsung menyelesaikan masalah.</h2>
+            <span className="eyebrow" style={{ display: 'block', marginBottom: 14 }}>
+              {t('projects.eyebrow')}
+            </span>
+            <h2 className="display-lg">{t('projects.headline')}</h2>
           </div>
           <a href="#contact" className="btn-ghost">
-            Semua Proyek <ArrowUpRight size={14} />
+            {t('projects.button')} <ArrowUpRight size={14} />
           </a>
         </div>
 
@@ -173,8 +161,8 @@ export default function projects() {
                   <div className="project-info">
                     <span className="project-title">{p.title}</span>
                     <div className="project-tags">
-                      {p.tags.map((t) => (
-                        <span key={t} className="project-tag">{t}</span>
+                      {p.tags.map((t_tag) => (
+                        <span key={t_tag} className="project-tag">{t_tag}</span>
                       ))}
                     </div>
                   </div>

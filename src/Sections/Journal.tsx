@@ -2,35 +2,38 @@ import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ArrowUpRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const POSTS = [
-  {
-    id: 'p1',
-    date: 'Okt 24, 2026',
-    title: 'Membangun E-Commerce Fesyen yang Cepat dan Fungsional dengan Laravel',
-    excerpt: 'Cerita di balik layar pembuatan platform Gloomie Sunday: bagaimana mengoptimalkan performa halaman, keranjang belanja, hingga proses checkout agar serba cepat tanpa ribet.',
-    img: '/images/gloomie-ecommerce-cover.webp',
-  },
-  {
-    id: 'p2',
-    date: 'Sep 15, 2026',
-    title: 'Otomasi Stok Gudang: Mengganti Pencatatan Manual dengan Sistem AppSheet',
-    excerpt: 'Langkah praktis mendigitalkan alur inventaris barang masuk dan keluar untuk bisnis konveksi agar laporan keuangan serta stok selalu sinkron secara real-time.',
-    img: '/images/gloomie-stock.webp',
-  },
-  {
-    id: 'p3',
-    date: 'Agu 02, 2026',
-    title: 'Ketelitian File Vektor: Dari Layar CorelDRAW Menuju Produksi Cetak Fisik',
-    excerpt: 'Pentingnya memahami persiapan berkas grafis secara presisi—mulai dari garis, warna, hingga format bersih—sebelum masuk ke mesin cetak pakaian.',
-    img: '/images/journal-vector.webp',
-  },
-]
-
 export default function Journal() {
   const sectionRef = useRef<HTMLElement>(null)
+  const { t } = useTranslation()
+
+  // Data POSTS dipindah ke dalam agar bisa dipasangkan dengan t()
+  const POSTS = [
+    {
+      id: 'p1',
+      date: t('journal.posts.p1.date'),
+      title: t('journal.posts.p1.title'),
+      excerpt: t('journal.posts.p1.excerpt'),
+      img: '/images/gloomie-ecommerce-cover.webp',
+    },
+    {
+      id: 'p2',
+      date: t('journal.posts.p2.date'),
+      title: t('journal.posts.p2.title'),
+      excerpt: t('journal.posts.p2.excerpt'),
+      img: '/images/gloomie-stock.webp',
+    },
+    {
+      id: 'p3',
+      date: t('journal.posts.p3.date'),
+      title: t('journal.posts.p3.title'),
+      excerpt: t('journal.posts.p3.excerpt'),
+      img: '/images/journal-vector.webp',
+    },
+  ]
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -52,15 +55,17 @@ export default function Journal() {
   }, [])
 
   return (
-    <section id="journal" className="section" ref={sectionRef} aria-label="Jurnal & Catatan">
+    <section id="journal" className="section" ref={sectionRef} aria-label={t('journal.eyebrow')}>
       <div className="container">
         <div className="section-header-inner reveal" style={{ marginBottom: 60 }}>
           <div>
-            <span className="eyebrow" style={{ display: 'block', marginBottom: 14 }}>Jurnal</span>
-            <h2 className="display-lg">Catatan & Pengalaman Teknis.</h2>
+            <span className="eyebrow" style={{ display: 'block', marginBottom: 14 }}>
+              {t('journal.eyebrow')}
+            </span>
+            <h2 className="display-lg">{t('journal.headline')}</h2>
           </div>
           <a href="#contact" className="btn-ghost">
-            Semua Artikel <ArrowUpRight size={14} />
+            {t('journal.button')} <ArrowUpRight size={14} />
           </a>
         </div>
 
